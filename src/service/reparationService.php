@@ -94,7 +94,7 @@ class reparationService
             $imageData = file_get_contents($image);
             $imageObject = $managerImage->read($imageData);
             $imageObject->resize(1366, 768);
-            $imageObject->text("{$uuid}-{$matricula}", 100, 75, function ($font) {
+            $imageObject->text("{$matricula}-{$uuid}", 100, 75, function ($font) {
                 $font->file(__DIR__ . "/../../resources/fonts/OpenSans-VariableFont_wdth,wght.ttf");
                 $font->size(34);
                 $font->color('#FF0000');
